@@ -11,7 +11,7 @@
 ### Notes
 * \w matches word characters (a-zA-Z0-9_), so we can do 
     ```
-    {word.replace(/[^\w]/g, "")}
+    word.replace(/[^\w]/g, "")
     ```
-* Another way is to build an object and map the      string into character:count. It's good practice to build a helper function so you don't need to write the for loop twice. 
-  Then we need to compare the two objects. To do that, for each key in objA, we want to check if its value equal to the value of the same key in objB. We also want to ensure the two object has the same lengths.
+* Another way is to build an object and map the string into character:count. It's good practice to build a helper function so you don't need to write the for loop twice. 
+  Then we need to compare the two objects. To do that, for each key in objA, we want to check if its value equal to the value of the same key in objB. We also want to ensure the two object has the same length.
