@@ -29,7 +29,7 @@ function steps(n, row=0, stair ='') {
     if (n===row){
         return;
     }
-    if (n===StaticRange.length){
+    if (n===stair.length){
         console.log(stair);
         steps(n, row+1); //when moving to the next row, will have an empty string again
         return;
