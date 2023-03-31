@@ -18,7 +18,7 @@ function pyramid(n) {
     const len = 1 + (n-1)*2; //first get the total length of last row
     for (let i=1; i<=n; i++){
         let pound = 1+(i-1)*2 // number of # 
-        let space = (len-pound)/2 //number of space on each slide, thus divided by 2
+        let space = (len-pound)/2 //number of space on each side, thus divided by 2
         let str = ' '.repeat(space)+'#'.repeat(pound)+' '.repeat(space)
         console.log(str)
     }
