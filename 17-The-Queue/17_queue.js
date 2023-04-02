@@ -19,6 +19,6 @@ class Queue {
     }
     // remove method - remove the last record
     remove(record) {
-        return this.data.pop(record);
+        return this.data.pop();
     }
 }
